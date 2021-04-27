@@ -19,6 +19,7 @@
 		DDEE0ECA263898E00069336F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE0EC9263898E00069336F /* Constants.swift */; };
 		DDEE0ECD263899750069336F /* RunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE0ECC263899750069336F /* RunningViewController.swift */; };
 		DDEE0ED0263899BE0069336F /* RunControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE0ECF263899BE0069336F /* RunControl.swift */; };
+		DDEE0ED32638A90A0069336F /* RunningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE0ED22638A90A0069336F /* RunningTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		DDEE0EC9263898E00069336F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DDEE0ECC263899750069336F /* RunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningViewController.swift; sourceTree = "<group>"; };
 		DDEE0ECF263899BE0069336F /* RunControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunControl.swift; sourceTree = "<group>"; };
+		DDEE0ED22638A90A0069336F /* RunningTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			children = (
 				DDEA0CF3263880CA00714208 /* HomeTableViewCell.swift */,
 				DDEA0CF4263880CA00714208 /* HomeTableViewCell.xib */,
+				DDEE0ED22638A90A0069336F /* RunningTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				DDEA0CCD26387A3400714208 /* AppDelegate.swift in Sources */,
 				DDEA0CCF26387A3400714208 /* SceneDelegate.swift in Sources */,
 				DDEE0ECA263898E00069336F /* Constants.swift in Sources */,
+				DDEE0ED32638A90A0069336F /* RunningTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
