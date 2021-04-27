@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		DDEA0CCD26387A3400714208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CCC26387A3400714208 /* AppDelegate.swift */; };
 		DDEA0CCF26387A3400714208 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CCE26387A3400714208 /* SceneDelegate.swift */; };
-		DDEA0CD126387A3400714208 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CD026387A3400714208 /* ViewController.swift */; };
+		DDEA0CD126387A3400714208 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CD026387A3400714208 /* HomeViewController.swift */; };
 		DDEA0CD426387A3400714208 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEA0CD226387A3400714208 /* Main.storyboard */; };
 		DDEA0CD726387A3400714208 /* My_Gym_Tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CD526387A3400714208 /* My_Gym_Tracker.xcdatamodeld */; };
 		DDEA0CD926387A3500714208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEA0CD826387A3500714208 /* Assets.xcassets */; };
 		DDEA0CDC26387A3500714208 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEA0CDA26387A3500714208 /* LaunchScreen.storyboard */; };
+		DDEA0CF5263880CA00714208 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CF3263880CA00714208 /* HomeTableViewCell.swift */; };
+		DDEA0CF6263880CA00714208 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDEA0CF4263880CA00714208 /* HomeTableViewCell.xib */; };
+		DDEE0ECA263898E00069336F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE0EC9263898E00069336F /* Constants.swift */; };
+		DDEE0ECD263899750069336F /* RunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE0ECC263899750069336F /* RunningViewController.swift */; };
+		DDEE0ED0263899BE0069336F /* RunControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEE0ECF263899BE0069336F /* RunControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDEA0CC926387A3400714208 /* My Gym Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Gym Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEA0CCC26387A3400714208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDEA0CCE26387A3400714208 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDEA0CD026387A3400714208 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDEA0CD026387A3400714208 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DDEA0CD326387A3400714208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDEA0CD626387A3400714208 /* My_Gym_Tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_Gym_Tracker.xcdatamodel; sourceTree = "<group>"; };
 		DDEA0CD826387A3500714208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDEA0CDB26387A3500714208 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDEA0CDD26387A3500714208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDEA0CF3263880CA00714208 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		DDEA0CF4263880CA00714208 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		DDEE0EC9263898E00069336F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DDEE0ECC263899750069336F /* RunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningViewController.swift; sourceTree = "<group>"; };
+		DDEE0ECF263899BE0069336F /* RunControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +70,51 @@
 			children = (
 				DDEA0CCC26387A3400714208 /* AppDelegate.swift */,
 				DDEA0CCE26387A3400714208 /* SceneDelegate.swift */,
-				DDEA0CD026387A3400714208 /* ViewController.swift */,
-				DDEA0CD226387A3400714208 /* Main.storyboard */,
+				DDEA0CE826387A5900714208 /* Model */,
+				DDEA0CE626387A4B00714208 /* View */,
+				DDEA0CE426387A4300714208 /* Controller */,
 				DDEA0CD826387A3500714208 /* Assets.xcassets */,
 				DDEA0CDA26387A3500714208 /* LaunchScreen.storyboard */,
 				DDEA0CDD26387A3500714208 /* Info.plist */,
 				DDEA0CD526387A3400714208 /* My_Gym_Tracker.xcdatamodeld */,
 			);
 			path = "My Gym Tracker";
+			sourceTree = "<group>";
+		};
+		DDEA0CE426387A4300714208 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA0CD026387A3400714208 /* HomeViewController.swift */,
+				DDEE0ECC263899750069336F /* RunningViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DDEA0CE626387A4B00714208 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA0CD226387A3400714208 /* Main.storyboard */,
+				DDEA0CEA2638803400714208 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDEA0CE826387A5900714208 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDEE0EC9263898E00069336F /* Constants.swift */,
+				DDEE0ECF263899BE0069336F /* RunControl.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDEA0CEA2638803400714208 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA0CF3263880CA00714208 /* HomeTableViewCell.swift */,
+				DDEA0CF4263880CA00714208 /* HomeTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +176,7 @@
 			files = (
 				DDEA0CDC26387A3500714208 /* LaunchScreen.storyboard in Resources */,
 				DDEA0CD926387A3500714208 /* Assets.xcassets in Resources */,
+				DDEA0CF6263880CA00714208 /* HomeTableViewCell.xib in Resources */,
 				DDEA0CD426387A3400714208 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,10 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEE0ECD263899750069336F /* RunningViewController.swift in Sources */,
+				DDEE0ED0263899BE0069336F /* RunControl.swift in Sources */,
 				DDEA0CD726387A3400714208 /* My_Gym_Tracker.xcdatamodeld in Sources */,
-				DDEA0CD126387A3400714208 /* ViewController.swift in Sources */,
+				DDEA0CF5263880CA00714208 /* HomeTableViewCell.swift in Sources */,
+				DDEA0CD126387A3400714208 /* HomeViewController.swift in Sources */,
 				DDEA0CCD26387A3400714208 /* AppDelegate.swift in Sources */,
 				DDEA0CCF26387A3400714208 /* SceneDelegate.swift in Sources */,
+				DDEE0ECA263898E00069336F /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
