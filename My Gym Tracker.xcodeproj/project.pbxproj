@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDDD5A4D263B335100A6CD45 /* RunningAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A4C263B335100A6CD45 /* RunningAddViewController.swift */; };
 		DDEA0CCD26387A3400714208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CCC26387A3400714208 /* AppDelegate.swift */; };
 		DDEA0CCF26387A3400714208 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CCE26387A3400714208 /* SceneDelegate.swift */; };
 		DDEA0CD126387A3400714208 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CD026387A3400714208 /* HomeViewController.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDDD5A4C263B335100A6CD45 /* RunningAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningAddViewController.swift; sourceTree = "<group>"; };
 		DDEA0CC926387A3400714208 /* My Gym Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Gym Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEA0CCC26387A3400714208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDEA0CCE26387A3400714208 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				DDEA0CD026387A3400714208 /* HomeViewController.swift */,
 				DDEE0ECC263899750069336F /* RunningViewController.swift */,
+				DDDD5A4C263B335100A6CD45 /* RunningAddViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				DDEA0CCD26387A3400714208 /* AppDelegate.swift in Sources */,
 				DDEA0CCF26387A3400714208 /* SceneDelegate.swift in Sources */,
 				DDEE0ECA263898E00069336F /* Constants.swift in Sources */,
+				DDDD5A4D263B335100A6CD45 /* RunningAddViewController.swift in Sources */,
 				DDEE0ED32638A90A0069336F /* RunningTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
