@@ -52,13 +52,14 @@ extension RunningViewController: UITableViewDelegate, UITableViewDataSource {
         cell.setDate(date: theDate)
         cell.setSpeed(speed: controller.allRunningSets[indexPath.row].speed)
         cell.setDuratation(duration: String(durationText))
+        cell.setDistance(theDistance: controller.allRunningSets[indexPath.row].distance)
         
         return cell
     }
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return tableView.frame.height/5
+        return tableView.frame.height/4
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

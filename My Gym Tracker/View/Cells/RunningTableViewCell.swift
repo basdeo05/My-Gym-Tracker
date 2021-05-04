@@ -10,6 +10,7 @@ import UIKit
 class RunningTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var durationLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
@@ -42,6 +43,10 @@ class RunningTableViewCell: UITableViewCell {
         let stringSpeed = String(speed)
         speedLabel.text = "Speed: \(stringSpeed)"
         
+    }
+    
+    func setDistance (theDistance: Float){
+        distanceLabel.text = String(format: "Distance %.1f", theDistance)
     }
 
 }
