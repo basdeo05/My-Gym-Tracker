@@ -33,7 +33,7 @@ class RunningTableViewCell: UITableViewCell {
     
     func setDuratation(duration: String) {
         
-        durationLabel.text = "Duration: \(duration)"
+        durationLabel.text = duration
         
     }
     

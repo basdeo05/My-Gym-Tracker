@@ -41,11 +41,17 @@ extension RunningViewController: UITableViewDelegate, UITableViewDataSource {
         guard let theDate = controller.allRunningSets[indexPath.row].date else {
             return cell
         }
+        
         let theDuration = controller.allRunningSets[indexPath.row].duration
+        let mins = String(format: "%0.f", theDuration / 60)
+        let seconds = String (Int(theDuration) % 60)
+        let durationText = "Mins: \(mins) Secs: \(seconds)"
+        print(durationText)
+        
         
         cell.setDate(date: theDate)
         cell.setSpeed(speed: controller.allRunningSets[indexPath.row].speed)
-        cell.setDuratation(duration: String(theDuration))
+        cell.setDuratation(duration: String(durationText))
         
         return cell
     }
