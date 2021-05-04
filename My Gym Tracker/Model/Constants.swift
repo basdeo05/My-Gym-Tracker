@@ -10,5 +10,6 @@ struct Constants {
     struct segues {
         static let homeToRun = "homeToRun"
         static let homeToWeights = "homeToWeights"
+        static let bodyToWorkout = "bodyToWorkout"
     }
 }
