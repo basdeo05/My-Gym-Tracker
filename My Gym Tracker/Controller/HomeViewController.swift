@@ -35,12 +35,6 @@ class HomeViewController: UIViewController {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.isHidden = false
     }
-    
-    
-    
-    
-
-
 }
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
@@ -86,7 +80,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if (indexPath.row == 0){
             performSegue(withIdentifier: Constants.segues.homeToRun, sender: self)
         }
-        
+        else if (indexPath.row == 1){
+            performSegue(withIdentifier: Constants.segues.homeToWeights, sender: self)
+        }
     }
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDD8E65F2640D9D30096975F /* WorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8E65E2640D9D30096975F /* WorkoutViewController.swift */; };
+		DDD8E6612640DA010096975F /* WorkoutControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD8E6602640DA010096975F /* WorkoutControl.swift */; };
 		DDDD5A4D263B335100A6CD45 /* RunningAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDD5A4C263B335100A6CD45 /* RunningAddViewController.swift */; };
 		DDEA0CCD26387A3400714208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CCC26387A3400714208 /* AppDelegate.swift */; };
 		DDEA0CCF26387A3400714208 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEA0CCE26387A3400714208 /* SceneDelegate.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDD8E65E2640D9D30096975F /* WorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewController.swift; sourceTree = "<group>"; };
+		DDD8E6602640DA010096975F /* WorkoutControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutControl.swift; sourceTree = "<group>"; };
 		DDDD5A4C263B335100A6CD45 /* RunningAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningAddViewController.swift; sourceTree = "<group>"; };
 		DDEA0CC926387A3400714208 /* My Gym Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Gym Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEA0CCC26387A3400714208 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 				DDEA0CD026387A3400714208 /* HomeViewController.swift */,
 				DDEE0ECC263899750069336F /* RunningViewController.swift */,
 				DDDD5A4C263B335100A6CD45 /* RunningAddViewController.swift */,
+				DDD8E65E2640D9D30096975F /* WorkoutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -109,6 +114,7 @@
 			children = (
 				DDEE0EC9263898E00069336F /* Constants.swift */,
 				DDEE0ECF263899BE0069336F /* RunControl.swift */,
+				DDD8E6602640DA010096975F /* WorkoutControl.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 			files = (
 				DDEE0ECD263899750069336F /* RunningViewController.swift in Sources */,
 				DDEE0ED0263899BE0069336F /* RunControl.swift in Sources */,
+				DDD8E65F2640D9D30096975F /* WorkoutViewController.swift in Sources */,
+				DDD8E6612640DA010096975F /* WorkoutControl.swift in Sources */,
 				DDEA0CD726387A3400714208 /* My_Gym_Tracker.xcdatamodeld in Sources */,
 				DDEA0CF5263880CA00714208 /* HomeTableViewCell.swift in Sources */,
 				DDEA0CD126387A3400714208 /* HomeViewController.swift in Sources */,

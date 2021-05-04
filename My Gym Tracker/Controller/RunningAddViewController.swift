@@ -38,8 +38,6 @@ class RunningAddViewController: UIViewController {
         let minutes = secondsInt / 60
         
         
-        
-        
         DispatchQueue.main.async {
             self.minutesLabel.text = "Minutes: \(minutes)"
             

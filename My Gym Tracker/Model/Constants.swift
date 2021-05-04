@@ -9,5 +9,6 @@ import Foundation
 struct Constants {
     struct segues {
         static let homeToRun = "homeToRun"
+        static let homeToWeights = "homeToWeights"
     }
 }

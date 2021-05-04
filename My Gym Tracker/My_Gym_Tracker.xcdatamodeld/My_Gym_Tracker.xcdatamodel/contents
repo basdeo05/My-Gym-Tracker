@@ -6,7 +6,19 @@
         <attribute name="duration" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="speed" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
+    <entity name="Sets_And_Reps" representedClassName="Sets_And_Reps" syncable="YES" codeGenerationType="class">
+        <attribute name="rep" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="set" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="workoutBelongTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Workout" inverseName="completedSets" inverseEntity="Workout"/>
+    </entity>
+    <entity name="Workout" representedClassName="Workout" syncable="YES" codeGenerationType="class">
+        <attribute name="categoryName" optional="YES" attributeType="String"/>
+        <attribute name="workoutName" optional="YES" attributeType="String"/>
+        <relationship name="completedSets" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Sets_And_Reps" inverseName="workoutBelongTo" inverseEntity="Sets_And_Reps"/>
+    </entity>
     <elements>
         <element name="Running" positionX="-54" positionY="-9" width="128" height="89"/>
+        <element name="Workout" positionX="-69.35546875" positionY="162.984375" width="128" height="88"/>
+        <element name="Sets_And_Reps" positionX="132.84375" positionY="165.60546875" width="128" height="88"/>
     </elements>
 </model>
