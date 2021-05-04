@@ -23,10 +23,13 @@ class RunningAddViewController: UIViewController {
     
     
     
+    let run = RunControl()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        run.delegate = self
     }
     
     @IBAction func durationValueChanged(_ sender: UISlider) {
@@ -67,6 +70,30 @@ class RunningAddViewController: UIViewController {
     
     
     @IBAction func addButtonPressed(_ sender: UIButton) {
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .medium
+        let userChosenDate = dateFormatter.string(from: datePicker.date)
+        
+        if let minute = minutesLabel.text, let seconds = secondsLabel.text {
+            
+            
+            run.addRunning(theDate: userChosenDate,
+                           howLong: durationSlider.value,
+                           howFast: speedSlider.value,
+                           howFar: distanceSlider.value)
+        }
     }
+}
+
+extension RunningAddViewController: runProtocol {
+    func updateUI() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    func error(error: Error) {
+        print("There was an error: \(error)")
+    }
+    
     
 }

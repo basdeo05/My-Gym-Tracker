@@ -43,7 +43,7 @@ class RunControl {
     }
     
     
-    func addRunning (theDate: String, howLong: String, howFast: Float) {
+    func addRunning (theDate: String, howLong: Float, howFast: Float, howFar: Float) {
         
         //Give the new object the persistent containter will be saved to
         let newRun = Running(context: persistentContext)
@@ -51,8 +51,19 @@ class RunControl {
         newRun.date = theDate
         newRun.duration = howLong
         newRun.speed = howFast
+        newRun.distance = howFar
         allRunningSets.append(newRun)
         
+        do {
+            try persistentContext.save()
+            delegate?.updateUI()
+        }
+        catch {
+            delegate?.error(error: error)
+        }
+    }
+    
+    func saveContext () {
         do {
             try persistentContext.save()
             delegate?.updateUI()

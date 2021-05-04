@@ -20,10 +20,13 @@ class RunningViewController: UIViewController {
         controller.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
-        
-        //Load all of users's running workouts saved
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         controller.loadRunning()
     }
+    
 }
 
 extension RunningViewController: UITableViewDelegate, UITableViewDataSource {
@@ -35,14 +38,14 @@ extension RunningViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "RunningCell") as! RunningTableViewCell
         
-        guard let theDate = controller.allRunningSets[indexPath.row].date,
-              let theDuration = controller.allRunningSets[indexPath.row].duration else {
+        guard let theDate = controller.allRunningSets[indexPath.row].date else {
             return cell
         }
+        let theDuration = controller.allRunningSets[indexPath.row].duration
         
         cell.setDate(date: theDate)
         cell.setSpeed(speed: controller.allRunningSets[indexPath.row].speed)
-        cell.setDuratation(duration: theDuration)
+        cell.setDuratation(duration: String(theDuration))
         
         return cell
     }
@@ -50,6 +53,14 @@ extension RunningViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return tableView.frame.height/5
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete){
+            controller.persistentContext.delete(controller.allRunningSets[indexPath.row])
+            controller.allRunningSets.remove(at: indexPath.row)
+            controller.saveContext()
+        }
     }
     
     
